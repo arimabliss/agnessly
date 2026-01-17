@@ -21,7 +21,7 @@ const DiscordStatus = ({ userId }: DiscordStatusProps) => {
   useEffect(() => {
     const fetchStatus = async () => {
       try {
-        const response = await fetch(`https://api.lanyard.rest/v1/users/1078296194725449738`);
+        const response = await fetch(`https://api.lanyard.rest/v1/users/$1078296194725449738`);
         const result = await response.json();
         if (result.success) {
           setData(result.data);
@@ -68,7 +68,7 @@ const DiscordStatus = ({ userId }: DiscordStatusProps) => {
   }
 
   const avatarUrl = data.discord_user.avatar
-    ? `https://cdn.discordapp.com/avatars/1078296194725449738/${data.discord_user.avatar}.png`
+    ? `https://cdn.discordapp.com/avatars/$1078296194725449738/${data.discord_user.avatar}.png`
     : `https://cdn.discordapp.com/embed/avatars/0.png`;
 
   return (
@@ -86,7 +86,7 @@ const DiscordStatus = ({ userId }: DiscordStatusProps) => {
         </div>
         <div className="flex flex-col flex-1">
           <a
-            href={`https://discord.com/users/1078296194725449738`}
+            href={`https://discord.com/users/$1078296194725449738`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-foreground/90 link-underline"
