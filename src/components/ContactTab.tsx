@@ -11,14 +11,14 @@ const contacts: ContactLink[] = [
   {
     icon: <MessageCircle size={14} />,
     label: 'Discord',
-    value: 'arcticayl',
+    value: 'eclipsa/agness',
     href: 'https://discord.com/users/arcticayl',
   },
   {
     icon: <Github size={14} />,
     label: 'GitHub',
-    value: '@irenic.alyaa',
-    href: 'https://github.com/irenic.alyaa',
+    value: '@arima',
+    href: 'https://blinime.vercel.app/',
   },
   {
     icon: <Mail size={14} />,
